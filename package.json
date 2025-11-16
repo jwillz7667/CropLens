@@ -1,0 +1,16 @@
+{
+  "name": "croplens",
+  "private": true,
+  "packageManager": "npm@10.8.1",
+  "scripts": {
+    "dev:web": "npm run dev --workspace @croplens/web",
+    "dev:api": "npm run dev --workspace @croplens/api",
+    "build": "npm run build --workspace @croplens/web && npm run build --workspace @croplens/api",
+    "lint": "npm run lint --workspace @croplens/web && npm run lint --workspace @croplens/api"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/*"
+  ]
+}

@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log*
+dist
+.next
+.env*
+.DS_Store
+coverage
+apps/web/node_modules
+apps/api/node_modules
+apps/web/.vite
+apps/api/.turbo
+*.tsbuildinfo

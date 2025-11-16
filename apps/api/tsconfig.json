@@ -1,0 +1,34 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "lib": [
+      "ES2021",
+      "DOM"
+    ],
+    "module": "NodeNext",
+    "paths": {
+      "@/lib/*": [
+        "src/lib/*"
+      ]
+    },
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "types": [
+      "node",
+      "next"
+    ],
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
